@@ -280,6 +280,8 @@ vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 nmap <C-d> dd
 
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
 if has("mac") || has("macunix")
   nmap <D-j> <M-j>
   nmap <D-k> <M-k>
