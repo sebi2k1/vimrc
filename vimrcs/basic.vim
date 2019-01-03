@@ -303,6 +303,9 @@ if has("autocmd")
 endif
 
 nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+nmap <F10> :ts <C-r><C-w><cr>
+nmap <F11> :tag <C-r><C-w><cr>
+nmap <F3> :cs find t <C-r><C-w>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
