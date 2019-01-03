@@ -299,22 +299,10 @@ fun! CleanExtraSpaces()
 endfun
 
 if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
+    autocmd BufWritePre *.txt,*.cxx,*.c,*.cpp,*.h,*.hxx,*.hpp,*.sh,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
-
+nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
