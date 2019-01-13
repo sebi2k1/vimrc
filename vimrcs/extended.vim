@@ -68,9 +68,6 @@ cnoremap <C-A>		<Home>
 cnoremap <C-E>		<End>
 cnoremap <C-K>		<C-U>
 
-cnoremap <C-P> <Up>
-cnoremap <C-N> <Down>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -108,9 +105,8 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 "
 map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
-
+map <F7> :cp<cr>
+map <F8> :cn<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
